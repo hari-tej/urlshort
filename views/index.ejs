@@ -26,9 +26,10 @@
         </tr>
       </thead>
       <tbody>
-        <div class="container-lg p-3 bg-light">
+        <div class="container-fluid py-3 bg-light">
           <% latest.forEach(data=>{ %>
-           <h5 >Here is your link:  <a class="text-success"  href="<%= data.code %> "> <%= data.short %></a></h5> 
+           <h5 >Here is your link:</h5> 
+          <a class="text-success"  href="<%= data.code %> "> <%= data.short %></a>
        
            <% }) %>
         </div>
